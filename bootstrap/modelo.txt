@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--tags do css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="style-index.css">
+
+    <title>Inicio_ValP SW</title>
+ </head>
+ <body>
+    <!--cabeçalho-->
+    <header>
+        <nav></nav>
+    </header>
+
+    <!--Cont. Principal-->
+    <main>
+        <figure></figure>
+    </main>
+
+    <!--Sessões-->
+    <section>
+        <article></article>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+
+    </footer>
+
+    <!--------------------------------tags do Javascript-------------------------------> 
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>

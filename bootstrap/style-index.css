@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,600;1,200;1,400;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/*:root {
+    --bs-blue: #0d6efd;
+}*/
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/**/
+header, main, section, footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+/**/
+header {
+    height: 80px;
+    background-color: #FFF; 
+    position: fixed; 
+    z-index: 1;
+}
+/*main {}*/
+footer {background-color: aqua;}
+
+nav {
+    width: 95%;
+    height: auto;
+}
+.container-fluid {
+    background-color: #FFF;
+}
+
+.options-users {
+    width: 120px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+button.btn.btn-secondary {
+    background-color: white;
+    border: none;
+}
+ul.options-users {
+    float: right;
+}
+/**/
+.dropdown-menu {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+/*------------------------------CONTEUDO PRINCIPAL--------------------------------------*/
+main {
+    margin-top:4em;
+    margin-bottom: 2em;
+    height:86vh;
+}
+#main-ger {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+}
+.main-desk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desk-ger {
+    width: 80%;
+    height: auto;
+}
+.desk-butt {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+.desk-butt > button{
+    width: 220px;
+    height: 54px;
+    border-radius: 15px;
+    border: 0px;
+    background-color:#070707;
+    font-weight: 400;
+}
+.desk-butt > button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.desk-butt > button:hover {
+    background-color: #2b2b2b;
+    transition: 0.4s ease-in;
+}
+
+/**/
+.main-back {
+    display: flex;
+    justify-content: flex-end;
+}
+.back-box { /*A div diferenciada*/
+    width: 100%;
+    height: 100%;
+    background-color:beige;
+    background-image: url('assets/images/formback2.jpg');
+    background-size: cover;
+    border-radius: 87% 0% 56% 65% / 72% 0% 87% 50%;
+}
+
+
+/*------------------------------SESSÕES--------------------------------------*/
+#main-content {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(252, 252, 252);
+}
+.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+}
+.cont-a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+    .carousel ,.carousel-inner {
+        height: 95%;
+    }
+    .carousel-caption {
+        height: 50%;
+    }
+
+.slide-content {
+    text-decoration: none;
+    color: #FFF;
+} 
+.slide-content:hover {
+    transition: 1s ease;
+    color: #696969;
+}
+.sli-title {
+    font-size: 24px;
+} 
+.slide-content span{
+    padding: 2px;
+    background-color: #000;
+}
+  
+/**/    
+.topCom {
+    width: 97%;
+    margin-top: 93vh;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    position: fixed;
+}
+.topCom img {
+    background-color: #FFF;
+    border-radius: 100%;
+    padding: 1.5px;
+}    
+
+/*-------------------Responsividade1: Tablet ---------------------*/
+@media (max-width: 991px) {
+   .content1 {
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 1fr;
+   }
+   
+   #main-content {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(252, 252, 252);
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        height: 100%;
+    }
+    .cont-a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .carousel ,.carousel-inner {
+        height: 95%;
+    }
+    .carousel-caption {
+        height: 50%;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    #main-ger {
+        display: flex;
+    }
+
+    .main-desk {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 90%;
+
+        background-image: url('assets/images/formback5.jpg');
+        background-size: cover;
+    }
+    .desk-ger {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFF;
+    }
+    .desk-butt {
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-back {display: none;}
+
+    .carousel ,.carousel-inner {
+        height: 400px;
+    }
+    .carousel-caption {
+        height: 8em;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .carousel ,.carousel-inner {
+        height: 300px;
+        background-color: red;
+    }
+    .carousel-caption {
+        background-color: green;
+        height: 8em;
+    }
+}
+
+
+
+
+
+
+
+
+
